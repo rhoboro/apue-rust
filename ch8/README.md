@@ -22,4 +22,17 @@ abnormal termination, signal number = SIGFPE
 # Printed after the prompt
 $ cargo run -p ch8 --bin waitpid
 $ second child, parent pid = Pid(1)
+
+# 8.10
+$ cargo build -p ch8 --bin echoall --release
+$ PATH=$PATH:$(pwd)/target/release cargo run -p ch8 --bin exec
+args[0]: echoall
+args[1]: myarg1
+args[2]: MY ARG2
+USER=unknown
+PATH=/tmp
+args[0]: echoall
+args[1]: only 1 arg
+CARGO=/Users/rhoboro/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo
+...
 ```
