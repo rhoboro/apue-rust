@@ -35,4 +35,13 @@ args[0]: echoall
 args[1]: only 1 arg
 CARGO=/Users/rhoboro/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo
 ...
+
+# 8.12
+$ chmod +x ch8/testinterp
+$ cargo run -p ch8 --bin shebang
+argv[0]: /Users/rhoboro/go/src/github.com/rhoboro/apue-rust/target/release/echoarg
+argv[1]: foo
+argv[2]: /Users/rhoboro/go/src/github.com/rhoboro/apue-rust/ch8/testinterp
+argv[3]: myarg1
+argv[4]: MY ARG2
 ```
