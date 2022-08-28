@@ -7,3 +7,7 @@ edition = "2021"
 
 [dependencies]
 nix = "0.24.1"
+
+[lib]
+name = "ch8"
+path = "src/lib.rs"
