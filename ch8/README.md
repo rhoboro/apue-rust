@@ -44,4 +44,9 @@ argv[1]: foo
 argv[2]: /Users/rhoboro/go/src/github.com/rhoboro/apue-rust/ch8/testinterp
 argv[3]: myarg1
 argv[4]: MY ARG2
+
+# 8.13
+$ cargo run -p ch8 --bin tsys target/release/printuids
+real uid = 501, effective uid = 501
+normal termination, exit status = 0
 ```
